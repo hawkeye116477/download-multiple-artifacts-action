@@ -4,9 +4,6 @@ author: 'hawkeye116477'
 
 # Define your inputs here.
 inputs:
-  repo-token:
-    description: 'The GITHUB_TOKEN secret'
-    default: '${{ github.token }}'
   names:
     description: "Artifact names"
     required: true
