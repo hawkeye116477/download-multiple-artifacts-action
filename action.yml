@@ -1,18 +1,18 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Multiple Artifacts Downloader'
+description: ''
+author: 'hawkeye116477'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+    default: '${{ github.token }}'
+  names:
+    description: "Artifact names"
     required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+  path:
+    description: 'Destination path'
+    required: true
 
 runs:
   using: node20
