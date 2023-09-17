@@ -1,5 +1,5 @@
 import { getInput, setFailed } from '@actions/core';
-import artifact from '@actions/artifact';
+import * as artifact from '@actions/artifact';
 
 async function run() {
     try {
@@ -7,8 +7,8 @@ async function run() {
         const artifactNames = getInput("names").trim().split("\n");
         const artifactPath = getInput("path");
         for (const artifactName of artifactNames) {
-            console.log(`Downloading ${artifactName} to ${artifactPath} ...`)
-            await artifactClient.downloadArtifact(artifactName, artifactPath, { createArtifactFolder: false })
+            console.log(`Downloading ${artifactName} to ${artifactPath} ...`);
+            await artifactClient.downloadArtifact(artifactName, artifactPath, { createArtifactFolder: false });
         }
     } catch (error) {
         setFailed(error.message);

@@ -8,7 +8,7 @@
 var __webpack_unused_export__;
 
 __webpack_unused_export__ = ({ value: true });
-__webpack_unused_export__ = void 0;
+exports.U = void 0;
 const artifact_client_1 = __nccwpck_require__(8802);
 /**
  * Constructs an ArtifactClient
@@ -16,7 +16,7 @@ const artifact_client_1 = __nccwpck_require__(8802);
 function create() {
     return artifact_client_1.DefaultArtifactClient.create();
 }
-__webpack_unused_export__ = create;
+exports.U = create;
 //# sourceMappingURL=artifact-client.js.map
 
 /***/ }),
@@ -9792,12 +9792,12 @@ __nccwpck_require__.r(__webpack_exports__);
 
 async function run() {
     try {
-        const artifactClient = _actions_artifact__WEBPACK_IMPORTED_MODULE_1__["default"].create();
+        const artifactClient = _actions_artifact__WEBPACK_IMPORTED_MODULE_1__/* .create */ .U();
         const artifactNames = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("names").trim().split("\n");
         const artifactPath = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("path");
         for (const artifactName of artifactNames) {
-            console.log(`Downloading ${artifactName} to ${artifactPath} ...`)
-            await artifactClient.downloadArtifact(artifactName, artifactPath, { createArtifactFolder: false })
+            console.log(`Downloading ${artifactName} to ${artifactPath} ...`);
+            await artifactClient.downloadArtifact(artifactName, artifactPath, { createArtifactFolder: false });
         }
     } catch (error) {
         (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed)(error.message);
