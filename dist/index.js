@@ -98527,7 +98527,7 @@ async function run() {
         const artifactPath = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)("path");
         for (const artifactName of artifactNames) {
             console.log(`Downloading ${artifactName} to ${artifactPath} ...`);
-            const {artifact: targetArtifact} = await artifactClient.getArtifact(artifactName);
+            const { artifact: targetArtifact } = await artifactClient.getArtifact(artifactName);
             await artifactClient.downloadArtifact(targetArtifact.id, { path: artifactPath });
         }
     } catch (error) {
