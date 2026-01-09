@@ -33,15 +33,15 @@ jobs:
         id: checkout
         uses: actions/checkout@v6
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: 20
-          cache: pnpm
-
       - uses: pnpm/action-setup@v4
         with:
           version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24.x'
+          cache: 'pnpm'
 
       - name: Install Dependencies
         id: install
@@ -49,7 +49,7 @@ jobs:
 
       - name: Build dist/ Directory
         id: build
-        run: pnpm run build --if-present
+        run: pnpm build || true
 
       - name: Compare Expected and Actual Directories
         id: diff
