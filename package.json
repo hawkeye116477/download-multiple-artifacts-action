@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@actions/artifact": "^5.0.1",
-    "@actions/core": "^2.0.1"
+    "@actions/core": "^2.0.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38"
