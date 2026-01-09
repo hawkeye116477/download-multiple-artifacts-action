@@ -20,7 +20,7 @@
     "build": "ncc build src/index.js -o dist --license licenses.txt"
   },
   "dependencies": {
-    "@actions/artifact": "^5.0.1",
+    "@actions/artifact": "^5.0.2",
     "@actions/core": "^2.0.2"
   },
   "devDependencies": {
