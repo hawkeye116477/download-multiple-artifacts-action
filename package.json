@@ -24,6 +24,6 @@
     "@actions/core": "^3.0.1"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38"
+    "@vercel/ncc": "^0.44"
   }
 }
