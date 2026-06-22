@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "enabled": true,
+      "schedule": ["* 21-23 * * 0"],
+      "labels": ["dependabot", "npm"]
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "enabled": true,
+      "schedule": ["* 21-23 * * 0"],
+      "labels": ["dependabot", "actions"]
+    }
+  ]
+}
