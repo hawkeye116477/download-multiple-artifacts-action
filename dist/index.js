@@ -17691,7 +17691,7 @@ util.toDosTime = function(d) {
 
 /***/ }),
 
-/***/ 5288:
+/***/ 2907:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 /**
@@ -18127,7 +18127,7 @@ var {CRC32Stream} = __nccwpck_require__(3086);
 var {DeflateCRC32Stream} = __nccwpck_require__(3086);
 
 var ArchiveOutputStream = __nccwpck_require__(9273);
-var ZipArchiveEntry = __nccwpck_require__(5288);
+var ZipArchiveEntry = __nccwpck_require__(2907);
 var GeneralPurposeBit = __nccwpck_require__(8087);
 
 var constants = __nccwpck_require__(9683);
@@ -18567,7 +18567,7 @@ ZipArchiveOutputStream.prototype.setComment = function(comment) {
  */
 module.exports = {
   ArchiveEntry: __nccwpck_require__(4385),
-  ZipArchiveEntry: __nccwpck_require__(5288),
+  ZipArchiveEntry: __nccwpck_require__(2907),
   ArchiveOutputStream: __nccwpck_require__(9273),
   ZipArchiveOutputStream: __nccwpck_require__(6207)
 };
@@ -78249,7 +78249,7 @@ exports.PathScurry = process.platform === 'win32' ? PathScurryWin32
 
 /***/ }),
 
-/***/ 563:
+/***/ 532:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 // This file exists as a CommonJS module to read the version from package.json.
@@ -78257,7 +78257,7 @@ exports.PathScurry = process.platform === 'win32' ? PathScurryWin32
 // ESLint rules and doesn't work reliably across all Node.js versions.
 // By keeping this as a .cjs file, we can use require() naturally and export
 // the version for the ESM modules to import.
-const packageJson = __nccwpck_require__(6107)
+const packageJson = __nccwpck_require__(4694)
 module.exports = { version: packageJson.version }
 
 
@@ -78577,11 +78577,11 @@ module.exports = index;
 
 /***/ }),
 
-/***/ 6107:
+/***/ 4694:
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"name":"@actions/artifact","version":"6.2.1","preview":true,"description":"Actions artifact lib","keywords":["github","actions","artifact"],"homepage":"https://github.com/actions/toolkit/tree/main/packages/artifact","license":"MIT","type":"module","main":"lib/artifact.js","types":"lib/artifact.d.ts","exports":{".":{"types":"./lib/artifact.d.ts","import":"./lib/artifact.js"}},"directories":{"lib":"lib","test":"__tests__"},"files":["lib","!.DS_Store"],"publishConfig":{"access":"public"},"repository":{"type":"git","url":"git+https://github.com/actions/toolkit.git","directory":"packages/artifact"},"scripts":{"audit-moderate":"npm install && npm audit --json --audit-level=moderate > audit.json","test":"cd ../../ && npm run test ./packages/artifact","bootstrap":"cd ../../ && npm run bootstrap","tsc-run":"tsc && cp src/internal/shared/package-version.cjs lib/internal/shared/","tsc":"npm run bootstrap && npm run tsc-run","gen:docs":"typedoc --plugin typedoc-plugin-markdown --out docs/generated src/artifact.ts --githubPages false --readme none"},"bugs":{"url":"https://github.com/actions/toolkit/issues"},"dependencies":{"@actions/core":"^3.0.0","@actions/github":"^9.0.0","@actions/http-client":"^4.0.0","@azure/storage-blob":"^12.30.0","@octokit/core":"^7.0.6","@octokit/plugin-request-log":"^6.0.0","@octokit/plugin-retry":"^8.0.0","@octokit/request":"^10.0.7","@octokit/request-error":"^7.1.0","@protobuf-ts/plugin":"^2.2.3-alpha.1","@protobuf-ts/runtime":"^2.9.4","archiver":"^7.0.1","jwt-decode":"^4.0.0","unzip-stream":"^0.3.1"},"devDependencies":{"@types/archiver":"^7.0.0","@types/unzip-stream":"^0.3.4","typedoc":"^0.28.16","typedoc-plugin-markdown":"^4.9.0","typescript":"^5.9.3"},"overrides":{"uri-js":"npm:uri-js-replace@^1.0.1","node-fetch":"^3.3.2"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"@actions/artifact","version":"6.3.1","preview":true,"description":"Actions artifact lib","keywords":["github","actions","artifact"],"homepage":"https://github.com/actions/toolkit/tree/main/packages/artifact","license":"MIT","type":"module","main":"lib/artifact.js","types":"lib/artifact.d.ts","exports":{".":{"types":"./lib/artifact.d.ts","import":"./lib/artifact.js"}},"directories":{"lib":"lib","test":"__tests__"},"files":["lib","!.DS_Store"],"publishConfig":{"access":"public"},"repository":{"type":"git","url":"git+https://github.com/actions/toolkit.git","directory":"packages/artifact"},"scripts":{"audit-moderate":"npm install && npm audit --json --audit-level=moderate > audit.json","test":"cd ../../ && npm run test ./packages/artifact","bootstrap":"cd ../../ && npm run bootstrap","tsc-run":"tsc && cp src/internal/shared/package-version.cjs lib/internal/shared/","tsc":"npm run bootstrap && npm run tsc-run","gen:docs":"typedoc --plugin typedoc-plugin-markdown --out docs/generated src/artifact.ts --githubPages false --readme none"},"bugs":{"url":"https://github.com/actions/toolkit/issues"},"dependencies":{"@actions/core":"^3.0.1","@actions/github":"^9.1.1","@actions/http-client":"^4.0.1","@azure/storage-blob":"^12.31.0","@octokit/core":"^7.0.6","@octokit/plugin-request-log":"^6.0.0","@octokit/plugin-retry":"^8.1.0","@octokit/request":"^10.0.8","@octokit/request-error":"^7.1.0","@protobuf-ts/runtime":"^2.11.1","@protobuf-ts/runtime-rpc":"^2.11.1","archiver":"^7.0.1","jwt-decode":"^4.0.0","unzip-stream":"^0.3.1"},"devDependencies":{"@protobuf-ts/plugin":"^2.11.1","@types/archiver":"^7.0.0","@types/unzip-stream":"^0.3.4","typedoc":"^0.28.19","typedoc-plugin-markdown":"^4.11.0","typescript":"^5.9.3"},"overrides":{"uri-js":"npm:uri-js-replace@^1.0.1","node-fetch":"^3.3.2"}}');
 
 /***/ })
 
@@ -79152,7 +79152,7 @@ class DecodedURL extends URL {
 }
 //# sourceMappingURL=proxy.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/tunnel@0.0.6/node_modules/tunnel/index.js
-var node_modules_tunnel = __nccwpck_require__(1410);
+var tunnel = __nccwpck_require__(1410);
 // EXTERNAL MODULE: ./node_modules/.pnpm/undici@6.29.0/node_modules/undici/index.js
 var undici = __nccwpck_require__(2883);
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.1/node_modules/@actions/http-client/lib/index.js
@@ -79230,7 +79230,7 @@ const HttpResponseRetryCodes = [
     HttpCodes.ServiceUnavailable,
     HttpCodes.GatewayTimeout
 ];
-const RetryableHttpVerbs = (/* unused pure expression or super */ null && (['OPTIONS', 'GET', 'DELETE', 'HEAD']));
+const RetryableHttpVerbs = ['OPTIONS', 'GET', 'DELETE', 'HEAD'];
 const ExponentialBackoffCeiling = 10;
 const ExponentialBackoffTimeSlice = 5;
 class HttpClientError extends Error {
@@ -79579,7 +79579,7 @@ class lib_HttpClient {
     }
     getAgentDispatcher(serverUrl) {
         const parsedUrl = new URL(serverUrl);
-        const proxyUrl = pm.getProxyUrl(parsedUrl);
+        const proxyUrl = getProxyUrl(parsedUrl);
         const useProxy = proxyUrl && proxyUrl.hostname;
         if (!useProxy) {
             return;
@@ -79590,7 +79590,7 @@ class lib_HttpClient {
         const info = {};
         info.parsedUrl = requestUrl;
         const usingSsl = info.parsedUrl.protocol === 'https:';
-        info.httpModule = usingSsl ? https : http;
+        info.httpModule = usingSsl ? external_https_namespaceObject : external_http_namespaceObject;
         const defaultPort = usingSsl ? 443 : 80;
         info.options = {};
         info.options.host = info.parsedUrl.hostname;
@@ -79689,7 +79689,7 @@ class lib_HttpClient {
     }
     _getAgent(parsedUrl) {
         let agent;
-        const proxyUrl = pm.getProxyUrl(parsedUrl);
+        const proxyUrl = getProxyUrl(parsedUrl);
         const useProxy = proxyUrl && proxyUrl.hostname;
         if (this._keepAlive && useProxy) {
             agent = this._proxyAgent;
@@ -79704,7 +79704,7 @@ class lib_HttpClient {
         const usingSsl = parsedUrl.protocol === 'https:';
         let maxSockets = 100;
         if (this.requestOptions) {
-            maxSockets = this.requestOptions.maxSockets || http.globalAgent.maxSockets;
+            maxSockets = this.requestOptions.maxSockets || external_http_.globalAgent.maxSockets;
         }
         // This is `useProxy` again, but we need to check `proxyURl` directly for TypeScripts's flow analysis.
         if (proxyUrl && proxyUrl.hostname) {
@@ -79729,7 +79729,7 @@ class lib_HttpClient {
         // if tunneling agent isn't assigned create a new agent
         if (!agent) {
             const options = { keepAlive: this._keepAlive, maxSockets };
-            agent = usingSsl ? new https.Agent(options) : new http.Agent(options);
+            agent = usingSsl ? new external_https_.Agent(options) : new external_http_.Agent(options);
             this._agent = agent;
         }
         if (usingSsl && this._ignoreSslError) {
@@ -79752,7 +79752,7 @@ class lib_HttpClient {
             return proxyAgent;
         }
         const usingSsl = parsedUrl.protocol === 'https:';
-        proxyAgent = new ProxyAgent(Object.assign({ uri: proxyUrl.href, pipelining: !this._keepAlive ? 0 : 1 }, ((proxyUrl.username || proxyUrl.password) && {
+        proxyAgent = new undici.ProxyAgent(Object.assign({ uri: proxyUrl.href, pipelining: !this._keepAlive ? 0 : 1 }, ((proxyUrl.username || proxyUrl.password) && {
             token: `Basic ${Buffer.from(`${proxyUrl.username}:${proxyUrl.password}`).toString('base64')}`
         })));
         this._proxyAgentDispatcher = proxyAgent;
@@ -81830,7 +81830,7 @@ function getIDToken(aud) {
  */
 
 //# sourceMappingURL=core.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/shared/config.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/shared/config.js
 
 
 // Used for controlling the highWaterMark value of the zip that is being streamed
@@ -81916,7 +81916,7 @@ function getMaxArtifactListCount() {
 //# sourceMappingURL=config.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/@protobuf-ts+runtime@2.11.1/node_modules/@protobuf-ts/runtime/build/commonjs/index.js
 var commonjs = __nccwpck_require__(5471);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/generated/google/protobuf/timestamp.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/generated/google/protobuf/timestamp.js
 
 
 
@@ -82050,7 +82050,7 @@ class Timestamp$Type extends commonjs.MessageType {
  */
 const Timestamp = new Timestamp$Type();
 //# sourceMappingURL=timestamp.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/generated/google/protobuf/wrappers.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/generated/google/protobuf/wrappers.js
 // @generated by protobuf-ts 2.9.1 with parameter long_type_string,client_none,generate_dependencies
 // @generated from protobuf file "google/protobuf/wrappers.proto" (package "google.protobuf", syntax proto3)
 // tslint:disable
@@ -82659,7 +82659,7 @@ const BytesValue = new BytesValue$Type();
 //# sourceMappingURL=wrappers.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/@protobuf-ts+runtime-rpc@2.11.1/node_modules/@protobuf-ts/runtime-rpc/build/commonjs/index.js
 var build_commonjs = __nccwpck_require__(5535);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/generated/results/api/v1/artifact.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/generated/results/api/v1/artifact.js
 // @generated by protobuf-ts 2.9.1 with parameter long_type_string,client_none,generate_dependencies
 // @generated from protobuf file "results/api/v1/artifact.proto" (package "github.actions.results.api.v1", syntax proto3)
 // tslint:disable
@@ -83375,7 +83375,7 @@ const ArtifactService = new build_commonjs/* ServiceType */.C0("github.actions.r
     { name: "DeleteArtifact", options: {}, I: artifact_DeleteArtifactRequest, O: artifact_DeleteArtifactResponse }
 ]);
 //# sourceMappingURL=artifact.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/generated/results/api/v1/artifact.twirp-client.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/generated/results/api/v1/artifact.twirp-client.js
 
 class ArtifactServiceClientJSON {
     constructor(rpc) {
@@ -83471,13 +83471,13 @@ class ArtifactServiceClientProtobuf {
     }
 }
 //# sourceMappingURL=artifact.twirp-client.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/generated/index.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/generated/index.js
 
 
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/upload/retention.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/upload/retention.js
 
 
 function getExpiration(retentionDays) {
@@ -83505,7 +83505,7 @@ function getRetentionDays() {
     return days;
 }
 //# sourceMappingURL=retention.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/upload/path-and-artifact-name-validation.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/upload/path-and-artifact-name-validation.js
 
 /**
  * Invalid characters that cannot be in the artifact name or an uploaded file. Will be rejected
@@ -83568,873 +83568,9 @@ The following characters are not allowed in files that are uploaded due to limit
     }
 }
 //# sourceMappingURL=path-and-artifact-name-validation.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.0/node_modules/@actions/http-client/lib/proxy.js
-function proxy_getProxyUrl(reqUrl) {
-    const usingSsl = reqUrl.protocol === 'https:';
-    if (proxy_checkBypass(reqUrl)) {
-        return undefined;
-    }
-    const proxyVar = (() => {
-        if (usingSsl) {
-            return process.env['https_proxy'] || process.env['HTTPS_PROXY'];
-        }
-        else {
-            return process.env['http_proxy'] || process.env['HTTP_PROXY'];
-        }
-    })();
-    if (proxyVar) {
-        try {
-            return new proxy_DecodedURL(proxyVar);
-        }
-        catch (_a) {
-            if (!proxyVar.startsWith('http://') && !proxyVar.startsWith('https://'))
-                return new proxy_DecodedURL(`http://${proxyVar}`);
-        }
-    }
-    else {
-        return undefined;
-    }
-}
-function proxy_checkBypass(reqUrl) {
-    if (!reqUrl.hostname) {
-        return false;
-    }
-    const reqHost = reqUrl.hostname;
-    if (proxy_isLoopbackAddress(reqHost)) {
-        return true;
-    }
-    const noProxy = process.env['no_proxy'] || process.env['NO_PROXY'] || '';
-    if (!noProxy) {
-        return false;
-    }
-    // Determine the request port
-    let reqPort;
-    if (reqUrl.port) {
-        reqPort = Number(reqUrl.port);
-    }
-    else if (reqUrl.protocol === 'http:') {
-        reqPort = 80;
-    }
-    else if (reqUrl.protocol === 'https:') {
-        reqPort = 443;
-    }
-    // Format the request hostname and hostname with port
-    const upperReqHosts = [reqUrl.hostname.toUpperCase()];
-    if (typeof reqPort === 'number') {
-        upperReqHosts.push(`${upperReqHosts[0]}:${reqPort}`);
-    }
-    // Compare request host against noproxy
-    for (const upperNoProxyItem of noProxy
-        .split(',')
-        .map(x => x.trim().toUpperCase())
-        .filter(x => x)) {
-        if (upperNoProxyItem === '*' ||
-            upperReqHosts.some(x => x === upperNoProxyItem ||
-                x.endsWith(`.${upperNoProxyItem}`) ||
-                (upperNoProxyItem.startsWith('.') &&
-                    x.endsWith(`${upperNoProxyItem}`)))) {
-            return true;
-        }
-    }
-    return false;
-}
-function proxy_isLoopbackAddress(host) {
-    const hostLower = host.toLowerCase();
-    return (hostLower === 'localhost' ||
-        hostLower.startsWith('127.') ||
-        hostLower.startsWith('[::1]') ||
-        hostLower.startsWith('[0:0:0:0:0:0:0:1]'));
-}
-class proxy_DecodedURL extends URL {
-    constructor(url, base) {
-        super(url, base);
-        this._decodedUsername = decodeURIComponent(super.username);
-        this._decodedPassword = decodeURIComponent(super.password);
-    }
-    get username() {
-        return this._decodedUsername;
-    }
-    get password() {
-        return this._decodedPassword;
-    }
-}
-//# sourceMappingURL=proxy.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.0/node_modules/@actions/http-client/lib/index.js
-/* eslint-disable @typescript-eslint/no-explicit-any */
-var lib_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-
-
-
-
-
-var lib_HttpCodes;
-(function (HttpCodes) {
-    HttpCodes[HttpCodes["OK"] = 200] = "OK";
-    HttpCodes[HttpCodes["MultipleChoices"] = 300] = "MultipleChoices";
-    HttpCodes[HttpCodes["MovedPermanently"] = 301] = "MovedPermanently";
-    HttpCodes[HttpCodes["ResourceMoved"] = 302] = "ResourceMoved";
-    HttpCodes[HttpCodes["SeeOther"] = 303] = "SeeOther";
-    HttpCodes[HttpCodes["NotModified"] = 304] = "NotModified";
-    HttpCodes[HttpCodes["UseProxy"] = 305] = "UseProxy";
-    HttpCodes[HttpCodes["SwitchProxy"] = 306] = "SwitchProxy";
-    HttpCodes[HttpCodes["TemporaryRedirect"] = 307] = "TemporaryRedirect";
-    HttpCodes[HttpCodes["PermanentRedirect"] = 308] = "PermanentRedirect";
-    HttpCodes[HttpCodes["BadRequest"] = 400] = "BadRequest";
-    HttpCodes[HttpCodes["Unauthorized"] = 401] = "Unauthorized";
-    HttpCodes[HttpCodes["PaymentRequired"] = 402] = "PaymentRequired";
-    HttpCodes[HttpCodes["Forbidden"] = 403] = "Forbidden";
-    HttpCodes[HttpCodes["NotFound"] = 404] = "NotFound";
-    HttpCodes[HttpCodes["MethodNotAllowed"] = 405] = "MethodNotAllowed";
-    HttpCodes[HttpCodes["NotAcceptable"] = 406] = "NotAcceptable";
-    HttpCodes[HttpCodes["ProxyAuthenticationRequired"] = 407] = "ProxyAuthenticationRequired";
-    HttpCodes[HttpCodes["RequestTimeout"] = 408] = "RequestTimeout";
-    HttpCodes[HttpCodes["Conflict"] = 409] = "Conflict";
-    HttpCodes[HttpCodes["Gone"] = 410] = "Gone";
-    HttpCodes[HttpCodes["TooManyRequests"] = 429] = "TooManyRequests";
-    HttpCodes[HttpCodes["InternalServerError"] = 500] = "InternalServerError";
-    HttpCodes[HttpCodes["NotImplemented"] = 501] = "NotImplemented";
-    HttpCodes[HttpCodes["BadGateway"] = 502] = "BadGateway";
-    HttpCodes[HttpCodes["ServiceUnavailable"] = 503] = "ServiceUnavailable";
-    HttpCodes[HttpCodes["GatewayTimeout"] = 504] = "GatewayTimeout";
-})(lib_HttpCodes || (lib_HttpCodes = {}));
-var lib_Headers;
-(function (Headers) {
-    Headers["Accept"] = "accept";
-    Headers["ContentType"] = "content-type";
-})(lib_Headers || (lib_Headers = {}));
-var lib_MediaTypes;
-(function (MediaTypes) {
-    MediaTypes["ApplicationJson"] = "application/json";
-})(lib_MediaTypes || (lib_MediaTypes = {}));
-/**
- * Returns the proxy URL, depending upon the supplied url and proxy environment variables.
- * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
- */
-function http_client_lib_getProxyUrl(serverUrl) {
-    const proxyUrl = pm.getProxyUrl(new URL(serverUrl));
-    return proxyUrl ? proxyUrl.href : '';
-}
-const lib_HttpRedirectCodes = [
-    lib_HttpCodes.MovedPermanently,
-    lib_HttpCodes.ResourceMoved,
-    lib_HttpCodes.SeeOther,
-    lib_HttpCodes.TemporaryRedirect,
-    lib_HttpCodes.PermanentRedirect
-];
-const lib_HttpResponseRetryCodes = [
-    lib_HttpCodes.BadGateway,
-    lib_HttpCodes.ServiceUnavailable,
-    lib_HttpCodes.GatewayTimeout
-];
-const lib_RetryableHttpVerbs = ['OPTIONS', 'GET', 'DELETE', 'HEAD'];
-const lib_ExponentialBackoffCeiling = 10;
-const lib_ExponentialBackoffTimeSlice = 5;
-class lib_HttpClientError extends Error {
-    constructor(message, statusCode) {
-        super(message);
-        this.name = 'HttpClientError';
-        this.statusCode = statusCode;
-        Object.setPrototypeOf(this, lib_HttpClientError.prototype);
-    }
-}
-class lib_HttpClientResponse {
-    constructor(message) {
-        this.message = message;
-    }
-    readBody() {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve) => lib_awaiter(this, void 0, void 0, function* () {
-                let output = Buffer.alloc(0);
-                this.message.on('data', (chunk) => {
-                    output = Buffer.concat([output, chunk]);
-                });
-                this.message.on('end', () => {
-                    resolve(output.toString());
-                });
-            }));
-        });
-    }
-    readBodyBuffer() {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve) => lib_awaiter(this, void 0, void 0, function* () {
-                const chunks = [];
-                this.message.on('data', (chunk) => {
-                    chunks.push(chunk);
-                });
-                this.message.on('end', () => {
-                    resolve(Buffer.concat(chunks));
-                });
-            }));
-        });
-    }
-}
-function lib_isHttps(requestUrl) {
-    const parsedUrl = new URL(requestUrl);
-    return parsedUrl.protocol === 'https:';
-}
-class http_client_lib_HttpClient {
-    constructor(userAgent, handlers, requestOptions) {
-        this._ignoreSslError = false;
-        this._allowRedirects = true;
-        this._allowRedirectDowngrade = false;
-        this._maxRedirects = 50;
-        this._allowRetries = false;
-        this._maxRetries = 1;
-        this._keepAlive = false;
-        this._disposed = false;
-        this.userAgent = this._getUserAgentWithOrchestrationId(userAgent);
-        this.handlers = handlers || [];
-        this.requestOptions = requestOptions;
-        if (requestOptions) {
-            if (requestOptions.ignoreSslError != null) {
-                this._ignoreSslError = requestOptions.ignoreSslError;
-            }
-            this._socketTimeout = requestOptions.socketTimeout;
-            if (requestOptions.allowRedirects != null) {
-                this._allowRedirects = requestOptions.allowRedirects;
-            }
-            if (requestOptions.allowRedirectDowngrade != null) {
-                this._allowRedirectDowngrade = requestOptions.allowRedirectDowngrade;
-            }
-            if (requestOptions.maxRedirects != null) {
-                this._maxRedirects = Math.max(requestOptions.maxRedirects, 0);
-            }
-            if (requestOptions.keepAlive != null) {
-                this._keepAlive = requestOptions.keepAlive;
-            }
-            if (requestOptions.allowRetries != null) {
-                this._allowRetries = requestOptions.allowRetries;
-            }
-            if (requestOptions.maxRetries != null) {
-                this._maxRetries = requestOptions.maxRetries;
-            }
-        }
-    }
-    options(requestUrl, additionalHeaders) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return this.request('OPTIONS', requestUrl, null, additionalHeaders || {});
-        });
-    }
-    get(requestUrl, additionalHeaders) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return this.request('GET', requestUrl, null, additionalHeaders || {});
-        });
-    }
-    del(requestUrl, additionalHeaders) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return this.request('DELETE', requestUrl, null, additionalHeaders || {});
-        });
-    }
-    post(requestUrl, data, additionalHeaders) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return this.request('POST', requestUrl, data, additionalHeaders || {});
-        });
-    }
-    patch(requestUrl, data, additionalHeaders) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return this.request('PATCH', requestUrl, data, additionalHeaders || {});
-        });
-    }
-    put(requestUrl, data, additionalHeaders) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return this.request('PUT', requestUrl, data, additionalHeaders || {});
-        });
-    }
-    head(requestUrl, additionalHeaders) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return this.request('HEAD', requestUrl, null, additionalHeaders || {});
-        });
-    }
-    sendStream(verb, requestUrl, stream, additionalHeaders) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return this.request(verb, requestUrl, stream, additionalHeaders);
-        });
-    }
-    /**
-     * Gets a typed object from an endpoint
-     * Be aware that not found returns a null.  Other errors (4xx, 5xx) reject the promise
-     */
-    getJson(requestUrl_1) {
-        return lib_awaiter(this, arguments, void 0, function* (requestUrl, additionalHeaders = {}) {
-            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, lib_MediaTypes.ApplicationJson);
-            const res = yield this.get(requestUrl, additionalHeaders);
-            return this._processResponse(res, this.requestOptions);
-        });
-    }
-    postJson(requestUrl_1, obj_1) {
-        return lib_awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
-            const data = JSON.stringify(obj, null, 2);
-            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, lib_MediaTypes.ApplicationJson);
-            additionalHeaders[lib_Headers.ContentType] =
-                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, lib_MediaTypes.ApplicationJson);
-            const res = yield this.post(requestUrl, data, additionalHeaders);
-            return this._processResponse(res, this.requestOptions);
-        });
-    }
-    putJson(requestUrl_1, obj_1) {
-        return lib_awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
-            const data = JSON.stringify(obj, null, 2);
-            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, lib_MediaTypes.ApplicationJson);
-            additionalHeaders[lib_Headers.ContentType] =
-                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, lib_MediaTypes.ApplicationJson);
-            const res = yield this.put(requestUrl, data, additionalHeaders);
-            return this._processResponse(res, this.requestOptions);
-        });
-    }
-    patchJson(requestUrl_1, obj_1) {
-        return lib_awaiter(this, arguments, void 0, function* (requestUrl, obj, additionalHeaders = {}) {
-            const data = JSON.stringify(obj, null, 2);
-            additionalHeaders[lib_Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, lib_Headers.Accept, lib_MediaTypes.ApplicationJson);
-            additionalHeaders[lib_Headers.ContentType] =
-                this._getExistingOrDefaultContentTypeHeader(additionalHeaders, lib_MediaTypes.ApplicationJson);
-            const res = yield this.patch(requestUrl, data, additionalHeaders);
-            return this._processResponse(res, this.requestOptions);
-        });
-    }
-    /**
-     * Makes a raw http request.
-     * All other methods such as get, post, patch, and request ultimately call this.
-     * Prefer get, del, post and patch
-     */
-    request(verb, requestUrl, data, headers) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            if (this._disposed) {
-                throw new Error('Client has already been disposed.');
-            }
-            const parsedUrl = new URL(requestUrl);
-            let info = this._prepareRequest(verb, parsedUrl, headers);
-            // Only perform retries on reads since writes may not be idempotent.
-            const maxTries = this._allowRetries && lib_RetryableHttpVerbs.includes(verb)
-                ? this._maxRetries + 1
-                : 1;
-            let numTries = 0;
-            let response;
-            do {
-                response = yield this.requestRaw(info, data);
-                // Check if it's an authentication challenge
-                if (response &&
-                    response.message &&
-                    response.message.statusCode === lib_HttpCodes.Unauthorized) {
-                    let authenticationHandler;
-                    for (const handler of this.handlers) {
-                        if (handler.canHandleAuthentication(response)) {
-                            authenticationHandler = handler;
-                            break;
-                        }
-                    }
-                    if (authenticationHandler) {
-                        return authenticationHandler.handleAuthentication(this, info, data);
-                    }
-                    else {
-                        // We have received an unauthorized response but have no handlers to handle it.
-                        // Let the response return to the caller.
-                        return response;
-                    }
-                }
-                let redirectsRemaining = this._maxRedirects;
-                while (response.message.statusCode &&
-                    lib_HttpRedirectCodes.includes(response.message.statusCode) &&
-                    this._allowRedirects &&
-                    redirectsRemaining > 0) {
-                    const redirectUrl = response.message.headers['location'];
-                    if (!redirectUrl) {
-                        // if there's no location to redirect to, we won't
-                        break;
-                    }
-                    const parsedRedirectUrl = new URL(redirectUrl);
-                    if (parsedUrl.protocol === 'https:' &&
-                        parsedUrl.protocol !== parsedRedirectUrl.protocol &&
-                        !this._allowRedirectDowngrade) {
-                        throw new Error('Redirect from HTTPS to HTTP protocol. This downgrade is not allowed for security reasons. If you want to allow this behavior, set the allowRedirectDowngrade option to true.');
-                    }
-                    // we need to finish reading the response before reassigning response
-                    // which will leak the open socket.
-                    yield response.readBody();
-                    // strip authorization header if redirected to a different hostname
-                    if (parsedRedirectUrl.hostname !== parsedUrl.hostname) {
-                        for (const header in headers) {
-                            // header names are case insensitive
-                            if (header.toLowerCase() === 'authorization') {
-                                delete headers[header];
-                            }
-                        }
-                    }
-                    // let's make the request with the new redirectUrl
-                    info = this._prepareRequest(verb, parsedRedirectUrl, headers);
-                    response = yield this.requestRaw(info, data);
-                    redirectsRemaining--;
-                }
-                if (!response.message.statusCode ||
-                    !lib_HttpResponseRetryCodes.includes(response.message.statusCode)) {
-                    // If not a retry code, return immediately instead of retrying
-                    return response;
-                }
-                numTries += 1;
-                if (numTries < maxTries) {
-                    yield response.readBody();
-                    yield this._performExponentialBackoff(numTries);
-                }
-            } while (numTries < maxTries);
-            return response;
-        });
-    }
-    /**
-     * Needs to be called if keepAlive is set to true in request options.
-     */
-    dispose() {
-        if (this._agent) {
-            this._agent.destroy();
-        }
-        this._disposed = true;
-    }
-    /**
-     * Raw request.
-     * @param info
-     * @param data
-     */
-    requestRaw(info, data) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve, reject) => {
-                function callbackForResult(err, res) {
-                    if (err) {
-                        reject(err);
-                    }
-                    else if (!res) {
-                        // If `err` is not passed, then `res` must be passed.
-                        reject(new Error('Unknown error'));
-                    }
-                    else {
-                        resolve(res);
-                    }
-                }
-                this.requestRawWithCallback(info, data, callbackForResult);
-            });
-        });
-    }
-    /**
-     * Raw request with callback.
-     * @param info
-     * @param data
-     * @param onResult
-     */
-    requestRawWithCallback(info, data, onResult) {
-        if (typeof data === 'string') {
-            if (!info.options.headers) {
-                info.options.headers = {};
-            }
-            info.options.headers['Content-Length'] = Buffer.byteLength(data, 'utf8');
-        }
-        let callbackCalled = false;
-        function handleResult(err, res) {
-            if (!callbackCalled) {
-                callbackCalled = true;
-                onResult(err, res);
-            }
-        }
-        const req = info.httpModule.request(info.options, (msg) => {
-            const res = new lib_HttpClientResponse(msg);
-            handleResult(undefined, res);
-        });
-        let socket;
-        req.on('socket', sock => {
-            socket = sock;
-        });
-        // If we ever get disconnected, we want the socket to timeout eventually
-        req.setTimeout(this._socketTimeout || 3 * 60000, () => {
-            if (socket) {
-                socket.end();
-            }
-            handleResult(new Error(`Request timeout: ${info.options.path}`));
-        });
-        req.on('error', function (err) {
-            // err has statusCode property
-            // res should have headers
-            handleResult(err);
-        });
-        if (data && typeof data === 'string') {
-            req.write(data, 'utf8');
-        }
-        if (data && typeof data !== 'string') {
-            data.on('close', function () {
-                req.end();
-            });
-            data.pipe(req);
-        }
-        else {
-            req.end();
-        }
-    }
-    /**
-     * Gets an http agent. This function is useful when you need an http agent that handles
-     * routing through a proxy server - depending upon the url and proxy environment variables.
-     * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
-     */
-    getAgent(serverUrl) {
-        const parsedUrl = new URL(serverUrl);
-        return this._getAgent(parsedUrl);
-    }
-    getAgentDispatcher(serverUrl) {
-        const parsedUrl = new URL(serverUrl);
-        const proxyUrl = proxy_getProxyUrl(parsedUrl);
-        const useProxy = proxyUrl && proxyUrl.hostname;
-        if (!useProxy) {
-            return;
-        }
-        return this._getProxyAgentDispatcher(parsedUrl, proxyUrl);
-    }
-    _prepareRequest(method, requestUrl, headers) {
-        const info = {};
-        info.parsedUrl = requestUrl;
-        const usingSsl = info.parsedUrl.protocol === 'https:';
-        info.httpModule = usingSsl ? external_https_namespaceObject : external_http_namespaceObject;
-        const defaultPort = usingSsl ? 443 : 80;
-        info.options = {};
-        info.options.host = info.parsedUrl.hostname;
-        info.options.port = info.parsedUrl.port
-            ? parseInt(info.parsedUrl.port)
-            : defaultPort;
-        info.options.path =
-            (info.parsedUrl.pathname || '') + (info.parsedUrl.search || '');
-        info.options.method = method;
-        info.options.headers = this._mergeHeaders(headers);
-        if (this.userAgent != null) {
-            info.options.headers['user-agent'] = this.userAgent;
-        }
-        info.options.agent = this._getAgent(info.parsedUrl);
-        // gives handlers an opportunity to participate
-        if (this.handlers) {
-            for (const handler of this.handlers) {
-                handler.prepareRequest(info.options);
-            }
-        }
-        return info;
-    }
-    _mergeHeaders(headers) {
-        if (this.requestOptions && this.requestOptions.headers) {
-            return Object.assign({}, lib_lowercaseKeys(this.requestOptions.headers), lib_lowercaseKeys(headers || {}));
-        }
-        return lib_lowercaseKeys(headers || {});
-    }
-    /**
-     * Gets an existing header value or returns a default.
-     * Handles converting number header values to strings since HTTP headers must be strings.
-     * Note: This returns string | string[] since some headers can have multiple values.
-     * For headers that must always be a single string (like Content-Type), use the
-     * specialized _getExistingOrDefaultContentTypeHeader method instead.
-     */
-    _getExistingOrDefaultHeader(additionalHeaders, header, _default) {
-        let clientHeader;
-        if (this.requestOptions && this.requestOptions.headers) {
-            const headerValue = lib_lowercaseKeys(this.requestOptions.headers)[header];
-            if (headerValue) {
-                clientHeader =
-                    typeof headerValue === 'number' ? headerValue.toString() : headerValue;
-            }
-        }
-        const additionalValue = additionalHeaders[header];
-        if (additionalValue !== undefined) {
-            return typeof additionalValue === 'number'
-                ? additionalValue.toString()
-                : additionalValue;
-        }
-        if (clientHeader !== undefined) {
-            return clientHeader;
-        }
-        return _default;
-    }
-    /**
-     * Specialized version of _getExistingOrDefaultHeader for Content-Type header.
-     * Always returns a single string (not an array) since Content-Type should be a single value.
-     * Converts arrays to comma-separated strings and numbers to strings to ensure type safety.
-     * This was split from _getExistingOrDefaultHeader to provide stricter typing for callers
-     * that assign the result to places expecting a string (e.g., additionalHeaders[Headers.ContentType]).
-     */
-    _getExistingOrDefaultContentTypeHeader(additionalHeaders, _default) {
-        let clientHeader;
-        if (this.requestOptions && this.requestOptions.headers) {
-            const headerValue = lib_lowercaseKeys(this.requestOptions.headers)[lib_Headers.ContentType];
-            if (headerValue) {
-                if (typeof headerValue === 'number') {
-                    clientHeader = String(headerValue);
-                }
-                else if (Array.isArray(headerValue)) {
-                    clientHeader = headerValue.join(', ');
-                }
-                else {
-                    clientHeader = headerValue;
-                }
-            }
-        }
-        const additionalValue = additionalHeaders[lib_Headers.ContentType];
-        // Return the first non-undefined value, converting numbers or arrays to strings if necessary
-        if (additionalValue !== undefined) {
-            if (typeof additionalValue === 'number') {
-                return String(additionalValue);
-            }
-            else if (Array.isArray(additionalValue)) {
-                return additionalValue.join(', ');
-            }
-            else {
-                return additionalValue;
-            }
-        }
-        if (clientHeader !== undefined) {
-            return clientHeader;
-        }
-        return _default;
-    }
-    _getAgent(parsedUrl) {
-        let agent;
-        const proxyUrl = proxy_getProxyUrl(parsedUrl);
-        const useProxy = proxyUrl && proxyUrl.hostname;
-        if (this._keepAlive && useProxy) {
-            agent = this._proxyAgent;
-        }
-        if (!useProxy) {
-            agent = this._agent;
-        }
-        // if agent is already assigned use that agent.
-        if (agent) {
-            return agent;
-        }
-        const usingSsl = parsedUrl.protocol === 'https:';
-        let maxSockets = 100;
-        if (this.requestOptions) {
-            maxSockets = this.requestOptions.maxSockets || external_http_.globalAgent.maxSockets;
-        }
-        // This is `useProxy` again, but we need to check `proxyURl` directly for TypeScripts's flow analysis.
-        if (proxyUrl && proxyUrl.hostname) {
-            const agentOptions = {
-                maxSockets,
-                keepAlive: this._keepAlive,
-                proxy: Object.assign(Object.assign({}, ((proxyUrl.username || proxyUrl.password) && {
-                    proxyAuth: `${proxyUrl.username}:${proxyUrl.password}`
-                })), { host: proxyUrl.hostname, port: proxyUrl.port })
-            };
-            let tunnelAgent;
-            const overHttps = proxyUrl.protocol === 'https:';
-            if (usingSsl) {
-                tunnelAgent = overHttps ? node_modules_tunnel.httpsOverHttps : node_modules_tunnel.httpsOverHttp;
-            }
-            else {
-                tunnelAgent = overHttps ? node_modules_tunnel.httpOverHttps : node_modules_tunnel.httpOverHttp;
-            }
-            agent = tunnelAgent(agentOptions);
-            this._proxyAgent = agent;
-        }
-        // if tunneling agent isn't assigned create a new agent
-        if (!agent) {
-            const options = { keepAlive: this._keepAlive, maxSockets };
-            agent = usingSsl ? new external_https_.Agent(options) : new external_http_.Agent(options);
-            this._agent = agent;
-        }
-        if (usingSsl && this._ignoreSslError) {
-            // we don't want to set NODE_TLS_REJECT_UNAUTHORIZED=0 since that will affect request for entire process
-            // http.RequestOptions doesn't expose a way to modify RequestOptions.agent.options
-            // we have to cast it to any and change it directly
-            agent.options = Object.assign(agent.options || {}, {
-                rejectUnauthorized: false
-            });
-        }
-        return agent;
-    }
-    _getProxyAgentDispatcher(parsedUrl, proxyUrl) {
-        let proxyAgent;
-        if (this._keepAlive) {
-            proxyAgent = this._proxyAgentDispatcher;
-        }
-        // if agent is already assigned use that agent.
-        if (proxyAgent) {
-            return proxyAgent;
-        }
-        const usingSsl = parsedUrl.protocol === 'https:';
-        proxyAgent = new undici.ProxyAgent(Object.assign({ uri: proxyUrl.href, pipelining: !this._keepAlive ? 0 : 1 }, ((proxyUrl.username || proxyUrl.password) && {
-            token: `Basic ${Buffer.from(`${proxyUrl.username}:${proxyUrl.password}`).toString('base64')}`
-        })));
-        this._proxyAgentDispatcher = proxyAgent;
-        if (usingSsl && this._ignoreSslError) {
-            // we don't want to set NODE_TLS_REJECT_UNAUTHORIZED=0 since that will affect request for entire process
-            // http.RequestOptions doesn't expose a way to modify RequestOptions.agent.options
-            // we have to cast it to any and change it directly
-            proxyAgent.options = Object.assign(proxyAgent.options.requestTls || {}, {
-                rejectUnauthorized: false
-            });
-        }
-        return proxyAgent;
-    }
-    _getUserAgentWithOrchestrationId(userAgent) {
-        const baseUserAgent = userAgent || 'actions/http-client';
-        const orchId = process.env['ACTIONS_ORCHESTRATION_ID'];
-        if (orchId) {
-            // Sanitize the orchestration ID to ensure it contains only valid characters
-            // Valid characters: 0-9, a-z, _, -, .
-            const sanitizedId = orchId.replace(/[^a-z0-9_.-]/gi, '_');
-            return `${baseUserAgent} actions_orchestration_id/${sanitizedId}`;
-        }
-        return baseUserAgent;
-    }
-    _performExponentialBackoff(retryNumber) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            retryNumber = Math.min(lib_ExponentialBackoffCeiling, retryNumber);
-            const ms = lib_ExponentialBackoffTimeSlice * Math.pow(2, retryNumber);
-            return new Promise(resolve => setTimeout(() => resolve(), ms));
-        });
-    }
-    _processResponse(res, options) {
-        return lib_awaiter(this, void 0, void 0, function* () {
-            return new Promise((resolve, reject) => lib_awaiter(this, void 0, void 0, function* () {
-                const statusCode = res.message.statusCode || 0;
-                const response = {
-                    statusCode,
-                    result: null,
-                    headers: {}
-                };
-                // not found leads to null obj returned
-                if (statusCode === lib_HttpCodes.NotFound) {
-                    resolve(response);
-                }
-                // get the result from the body
-                function dateTimeDeserializer(key, value) {
-                    if (typeof value === 'string') {
-                        const a = new Date(value);
-                        if (!isNaN(a.valueOf())) {
-                            return a;
-                        }
-                    }
-                    return value;
-                }
-                let obj;
-                let contents;
-                try {
-                    contents = yield res.readBody();
-                    if (contents && contents.length > 0) {
-                        if (options && options.deserializeDates) {
-                            obj = JSON.parse(contents, dateTimeDeserializer);
-                        }
-                        else {
-                            obj = JSON.parse(contents);
-                        }
-                        response.result = obj;
-                    }
-                    response.headers = res.message.headers;
-                }
-                catch (err) {
-                    // Invalid resource (contents not json);  leaving result obj null
-                }
-                // note that 3xx redirects are handled by the http layer.
-                if (statusCode > 299) {
-                    let msg;
-                    // if exception/error in body, attempt to get better error
-                    if (obj && obj.message) {
-                        msg = obj.message;
-                    }
-                    else if (contents && contents.length > 0) {
-                        // it may be the case that the exception is in the body message as string
-                        msg = contents;
-                    }
-                    else {
-                        msg = `Failed request: (${statusCode})`;
-                    }
-                    const err = new lib_HttpClientError(msg, statusCode);
-                    err.result = response.result;
-                    reject(err);
-                }
-                else {
-                    resolve(response);
-                }
-            }));
-        });
-    }
-}
-const lib_lowercaseKeys = (obj) => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCase()] = obj[k]), c), {});
-//# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+http-client@4.0.0/node_modules/@actions/http-client/lib/auth.js
-var lib_auth_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-class auth_BasicCredentialHandler {
-    constructor(username, password) {
-        this.username = username;
-        this.password = password;
-    }
-    prepareRequest(options) {
-        if (!options.headers) {
-            throw Error('The request has no headers');
-        }
-        options.headers['Authorization'] = `Basic ${Buffer.from(`${this.username}:${this.password}`).toString('base64')}`;
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication() {
-        return false;
-    }
-    handleAuthentication() {
-        return lib_auth_awaiter(this, void 0, void 0, function* () {
-            throw new Error('not implemented');
-        });
-    }
-}
-class lib_auth_BearerCredentialHandler {
-    constructor(token) {
-        this.token = token;
-    }
-    // currently implements pre-authorization
-    // TODO: support preAuth = false where it hooks on 401
-    prepareRequest(options) {
-        if (!options.headers) {
-            throw Error('The request has no headers');
-        }
-        options.headers['Authorization'] = `Bearer ${this.token}`;
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication() {
-        return false;
-    }
-    handleAuthentication() {
-        return lib_auth_awaiter(this, void 0, void 0, function* () {
-            throw new Error('not implemented');
-        });
-    }
-}
-class auth_PersonalAccessTokenCredentialHandler {
-    constructor(token) {
-        this.token = token;
-    }
-    // currently implements pre-authorization
-    // TODO: support preAuth = false where it hooks on 401
-    prepareRequest(options) {
-        if (!options.headers) {
-            throw Error('The request has no headers');
-        }
-        options.headers['Authorization'] = `Basic ${Buffer.from(`PAT:${this.token}`).toString('base64')}`;
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication() {
-        return false;
-    }
-    handleAuthentication() {
-        return lib_auth_awaiter(this, void 0, void 0, function* () {
-            throw new Error('not implemented');
-        });
-    }
-}
-//# sourceMappingURL=auth.js.map
-// EXTERNAL MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/shared/package-version.cjs
-var package_version = __nccwpck_require__(563);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/shared/user-agent.js
+// EXTERNAL MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/shared/package-version.cjs
+var package_version = __nccwpck_require__(532);
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/shared/user-agent.js
 
 /**
  * Ensure that this User Agent String is used in all HTTP calls so that we can monitor telemetry between different versions of this package
@@ -84443,7 +83579,7 @@ function getUserAgentString() {
     return `@actions/artifact-${package_version.version}`;
 }
 //# sourceMappingURL=user-agent.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/shared/errors.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/shared/errors.js
 class FilesNotFoundError extends Error {
     constructor(files = []) {
         let message = 'No files were found to upload';
@@ -84564,7 +83700,7 @@ function jwtDecode(token, options) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/shared/util.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/shared/util.js
 
 
 
@@ -84683,7 +83819,7 @@ function maskSecretUrls(body) {
     }
 }
 //# sourceMappingURL=util.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/shared/artifact-twirp-client.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/shared/artifact-twirp-client.js
 var artifact_twirp_client_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -84704,8 +83840,9 @@ var artifact_twirp_client_awaiter = (undefined && undefined.__awaiter) || functi
 class ArtifactHttpClient {
     constructor(userAgent, maxAttempts, baseRetryIntervalMilliseconds, retryMultiplier) {
         this.maxAttempts = 5;
-        this.baseRetryIntervalMilliseconds = 3000;
+        this.baseRetryIntervalMilliseconds = 8000;
         this.retryMultiplier = 1.5;
+        this.retryTimeoutMilliseconds = 120000;
         const token = getRuntimeToken();
         this.baseUrl = getResultsServiceUrl();
         if (maxAttempts) {
@@ -84717,8 +83854,8 @@ class ArtifactHttpClient {
         if (retryMultiplier) {
             this.retryMultiplier = retryMultiplier;
         }
-        this.httpClient = new http_client_lib_HttpClient(userAgent, [
-            new lib_auth_BearerCredentialHandler(token)
+        this.httpClient = new lib_HttpClient(userAgent, [
+            new auth_BearerCredentialHandler(token)
         ]);
     }
     // This function satisfies the Rpc interface. It is compatible with the JSON
@@ -84744,11 +83881,16 @@ class ArtifactHttpClient {
             let attempt = 0;
             let errorMessage = '';
             let rawBody = '';
+            let totalRetryWaitMilliseconds = 0;
             while (attempt < this.maxAttempts) {
                 let isRetryable = false;
+                let retryAfterSeconds;
                 try {
                     const response = yield operation();
                     const statusCode = response.message.statusCode;
+                    if (statusCode === HttpCodes.TooManyRequests) {
+                        retryAfterSeconds = this.getRetryAfterSeconds(response);
+                    }
                     rawBody = yield response.readBody();
                     core_debug(`[Response] - ${response.message.statusCode}`);
                     core_debug(`Headers: ${JSON.stringify(response.message.headers, null, 2)}`);
@@ -84786,9 +83928,16 @@ class ArtifactHttpClient {
                 if (attempt + 1 === this.maxAttempts) {
                     throw new Error(`Failed to make request after ${this.maxAttempts} attempts: ${errorMessage}`);
                 }
-                const retryTimeMilliseconds = this.getExponentialRetryTimeMilliseconds(attempt);
+                const retryTimeMilliseconds = retryAfterSeconds !== undefined
+                    ? retryAfterSeconds * 1000
+                    : this.getExponentialRetryTimeMilliseconds(attempt);
+                if (totalRetryWaitMilliseconds + retryTimeMilliseconds >
+                    this.retryTimeoutMilliseconds) {
+                    throw new Error(`Retry wait of ${retryTimeMilliseconds} ms would exceed the maximum total retry wait of ${this.retryTimeoutMilliseconds} ms: ${errorMessage}`);
+                }
                 info(`Attempt ${attempt + 1} of ${this.maxAttempts} failed with error: ${errorMessage}. Retrying request in ${retryTimeMilliseconds} ms...`);
                 yield this.sleep(retryTimeMilliseconds);
+                totalRetryWaitMilliseconds += retryTimeMilliseconds;
                 attempt++;
             }
             throw new Error(`Request failed`);
@@ -84803,13 +83952,24 @@ class ArtifactHttpClient {
         if (!statusCode)
             return false;
         const retryableStatusCodes = [
-            lib_HttpCodes.BadGateway,
-            lib_HttpCodes.GatewayTimeout,
-            lib_HttpCodes.InternalServerError,
-            lib_HttpCodes.ServiceUnavailable,
-            lib_HttpCodes.TooManyRequests
+            HttpCodes.BadGateway,
+            HttpCodes.GatewayTimeout,
+            HttpCodes.InternalServerError,
+            HttpCodes.ServiceUnavailable,
+            HttpCodes.TooManyRequests
         ];
         return retryableStatusCodes.includes(statusCode);
+    }
+    // Only positive integer seconds are supported, not HTTP-date values.
+    getRetryAfterSeconds(response) {
+        var _a;
+        const header = response.message.headers['retry-after'];
+        const value = (_a = (Array.isArray(header) ? header[0] : header)) === null || _a === void 0 ? void 0 : _a.trim();
+        if (value === undefined || !/^\d+$/.test(value)) {
+            return undefined;
+        }
+        const parsed = parseInt(value, 10);
+        return !isNaN(parsed) && parsed > 0 ? parsed : undefined;
     }
     sleep(milliseconds) {
         return artifact_twirp_client_awaiter(this, void 0, void 0, function* () {
@@ -84834,7 +83994,7 @@ function internalArtifactTwirpClient(options) {
     return new ArtifactServiceClientJSON(client);
 }
 //# sourceMappingURL=artifact-twirp-client.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/upload/upload-zip-specification.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/upload/upload-zip-specification.js
 
 
 
@@ -93225,7 +92385,7 @@ function convertHttpClient(requestPolicyClient) {
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.6.1/node_modules/path-expression-matcher/src/Expression.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.6.2/node_modules/path-expression-matcher/src/Expression.js
 /**
  * Expression - Parses and stores a tag pattern expression
  * 
@@ -93458,7 +92618,7 @@ class Expression {
     return this.pattern;
   }
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.6.1/node_modules/path-expression-matcher/src/Matcher.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.6.2/node_modules/path-expression-matcher/src/Matcher.js
 
 
 /**
@@ -93688,26 +92848,29 @@ class Matcher {
 
     // Get or create sibling tracking for current level
     const currentLevel = this.path.length;
-    if (!this.siblingStacks[currentLevel]) {
-      this.siblingStacks[currentLevel] = new Map();
+    let level = this.siblingStacks[currentLevel];
+    if (!level) {
+      // `counts` tells same-name siblings apart (the "counter" — nth <item>
+      // among other <item>s). `total` is every child seen at this level so
+      // far, kept as a running number instead of re-added from `counts` on
+      // every push — a parent with many differently-named children would
+      // otherwise cost more per child the more distinct names it has.
+      level = { counts: new Map(), total: 0 };
+      this.siblingStacks[currentLevel] = level;
     }
-
-    const siblings = this.siblingStacks[currentLevel];
 
     // Create a unique key for sibling tracking that includes namespace
     const siblingKey = namespace ? `${namespace}:${tagName}` : tagName;
 
     // Calculate counter (how many times this tag appeared at this level)
-    const counter = siblings.get(siblingKey) || 0;
+    const counter = level.counts.get(siblingKey) || 0;
 
-    // Calculate position (total children at this level so far)
-    let position = 0;
-    for (const count of siblings.values()) {
-      position += count;
-    }
+    // Position = total children at this level seen before this one.
+    const position = level.total;
 
-    // Update sibling count for this tag
-    siblings.set(siblingKey, counter + 1);
+    // Update sibling count for this tag, and the level's running total.
+    level.counts.set(siblingKey, counter + 1);
+    level.total++;
 
     // Create new node
     const node = {
@@ -94083,7 +93246,7 @@ class Matcher {
   snapshot() {
     return {
       path: this.path.map(node => ({ ...node })),
-      siblingStacks: this.siblingStacks.map(map => new Map(map)),
+      siblingStacks: this.siblingStacks.map(level => level ? { counts: new Map(level.counts), total: level.total } : level),
       keptAttrs: this._keptAttrs.map(entry => ({ ...entry }))
     };
   }
@@ -94095,7 +93258,7 @@ class Matcher {
   restore(snapshot) {
     this._pathStringCache = null;
     this.path = snapshot.path.map(node => ({ ...node }));
-    this.siblingStacks = snapshot.siblingStacks.map(map => new Map(map));
+    this.siblingStacks = snapshot.siblingStacks.map(level => level ? { counts: new Map(level.counts), total: level.total } : level);
     this._keptAttrs = (snapshot.keptAttrs || []).map(entry => ({ ...entry }));
   }
 
@@ -97468,904 +96631,6 @@ function ignoreAttributes_getIgnoreAttributesFn(ignoreAttributes) {
     }
     return () => false
 }
-;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.6.2/node_modules/path-expression-matcher/src/Matcher.js
-
-
-/**
- * MatcherView - A lightweight read-only view over a Matcher's internal state.
- *
- * Created once by Matcher and reused across all callbacks. Holds a direct
- * reference to the parent Matcher so it always reflects current parser state
- * with zero copying or freezing overhead.
- *
- * Users receive this via {@link Matcher#readOnly} or directly from parser
- * callbacks. It exposes all query and matching methods but has no mutation
- * methods — misuse is caught at the TypeScript level rather than at runtime.
- *
- * @example
- * const matcher = new Matcher();
- * const view = matcher.readOnly();
- *
- * matcher.push("root", {});
- * view.getCurrentTag(); // "root"
- * view.getDepth();      // 1
- */
-class Matcher_MatcherView {
-  /**
-   * @param {Matcher} matcher - The parent Matcher instance to read from.
-   */
-  constructor(matcher) {
-    this._matcher = matcher;
-  }
-
-  /**
-   * Get the path separator used by the parent matcher.
-   * @returns {string}
-   */
-  get separator() {
-    return this._matcher.separator;
-  }
-
-  /**
-   * Get current tag name.
-   * @returns {string|undefined}
-   */
-  getCurrentTag() {
-    const path = this._matcher.path;
-    return path.length > 0 ? path[path.length - 1].tag : undefined;
-  }
-
-  /**
-   * Get current namespace.
-   * @returns {string|undefined}
-   */
-  getCurrentNamespace() {
-    const path = this._matcher.path;
-    return path.length > 0 ? path[path.length - 1].namespace : undefined;
-  }
-
-  /**
-   * Get current node's attribute value.
-   * @param {string} attrName
-   * @returns {*}
-   */
-  getAttrValue(attrName) {
-    const path = this._matcher.path;
-    if (path.length === 0) return undefined;
-    return path[path.length - 1].values?.[attrName];
-  }
-
-  /**
-   * Check if current node has an attribute.
-   * @param {string} attrName
-   * @returns {boolean}
-   */
-  hasAttr(attrName) {
-    const path = this._matcher.path;
-    if (path.length === 0) return false;
-    const current = path[path.length - 1];
-    return current.values !== undefined && attrName in current.values;
-  }
-
-  /**
-   * Get the value of a "kept" attribute from the nearest ancestor (or
-   * current node) that declared it via `push(tag, attrs, ns, { keep: [...] })`.
-   * @param {string} attrName
-   * @returns {*}
-   */
-  getAnyParentAttr(attrName) {
-    return this._matcher.getAnyParentAttr(attrName);
-  }
-
-  /**
-   * Check whether any ancestor (or the current node) kept the given
-   * attribute via `push(tag, attrs, ns, { keep: [...] })`.
-   * @param {string} attrName
-   * @returns {boolean}
-   */
-  hasAnyParentAttr(attrName) {
-    return this._matcher.hasAnyParentAttr(attrName);
-  }
-
-  /**
-   * Get current node's sibling position (child index in parent).
-   * @returns {number}
-   */
-  getPosition() {
-    const path = this._matcher.path;
-    if (path.length === 0) return -1;
-    return path[path.length - 1].position ?? 0;
-  }
-
-  /**
-   * Get current node's repeat counter (occurrence count of this tag name).
-   * @returns {number}
-   */
-  getCounter() {
-    const path = this._matcher.path;
-    if (path.length === 0) return -1;
-    return path[path.length - 1].counter ?? 0;
-  }
-
-  /**
-   * Get current node's sibling index (alias for getPosition).
-   * @returns {number}
-   * @deprecated Use getPosition() or getCounter() instead
-   */
-  getIndex() {
-    return this.getPosition();
-  }
-
-  /**
-   * Get current path depth.
-   * @returns {number}
-   */
-  getDepth() {
-    return this._matcher.path.length;
-  }
-
-  /**
-   * Get path as string.
-   * @param {string} [separator] - Optional separator (uses default if not provided)
-   * @param {boolean} [includeNamespace=true]
-   * @returns {string}
-   */
-  toString(separator, includeNamespace = true) {
-    return this._matcher.toString(separator, includeNamespace);
-  }
-
-  /**
-   * Get path as array of tag names.
-   * @returns {string[]}
-   */
-  toArray() {
-    return this._matcher.path.map(n => n.tag);
-  }
-
-  /**
-   * Match current path against an Expression.
-   * @param {Expression} expression
-   * @returns {boolean}
-   */
-  matches(expression) {
-    return this._matcher.matches(expression);
-  }
-
-  /**
-   * Match any expression in the given set against the current path.
-   * @param {ExpressionSet} exprSet
-   * @returns {boolean}
-   */
-  matchesAny(exprSet) {
-    return exprSet.matchesAny(this._matcher);
-  }
-}
-
-/**
- * Matcher - Tracks current path in XML/JSON tree and matches against Expressions.
- *
- * The matcher maintains a stack of nodes representing the current path from root to
- * current tag. It only stores attribute values for the current (top) node to minimize
- * memory usage. Sibling tracking is used to auto-calculate position and counter.
- *
- * Use {@link Matcher#readOnly} to obtain a {@link MatcherView} safe to pass to
- * user callbacks — it always reflects current state with no Proxy overhead.
- *
- * @example
- * const matcher = new Matcher();
- * matcher.push("root", {});
- * matcher.push("users", {});
- * matcher.push("user", { id: "123", type: "admin" });
- *
- * const expr = new Expression("root.users.user");
- * matcher.matches(expr); // true
- */
-class Matcher_Matcher {
-  /**
-   * Create a new Matcher.
-   * @param {Object} [options={}]
-   * @param {string} [options.separator='.'] - Default path separator
-   */
-  constructor(options = {}) {
-    this.separator = options.separator || '.';
-    this.path = [];
-    this.siblingStacks = [];
-    // Each path node: { tag, values, position, counter, namespace? }
-    // values only present for current (last) node
-    // Each siblingStacks entry: Map<tagName, count> tracking occurrences at each level
-    this._pathStringCache = null;
-    this._view = new Matcher_MatcherView(this);
-
-    // Kept-attribute stack: only populated when push() is called with options.keep.
-    this._keptAttrs = [];
-  }
-
-  /**
-   * Push a new tag onto the path.
-   * @param {string} tagName
-   * @param {Object|null} [attrValues=null]
-   * @param {string|null} [namespace=null]
-   * @param {Object|null} [options=null]
-   * @param {string[]} [options.keep] - Names of attributes (from attrValues)
-   */
-  push(tagName, attrValues = null, namespace = null, options = null) {
-    this._pathStringCache = null;
-
-    // Remove values from previous current node (now becoming ancestor)
-    if (this.path.length > 0) {
-      this.path[this.path.length - 1].values = undefined;
-    }
-
-    // Get or create sibling tracking for current level
-    const currentLevel = this.path.length;
-    let level = this.siblingStacks[currentLevel];
-    if (!level) {
-      // `counts` tells same-name siblings apart (the "counter" — nth <item>
-      // among other <item>s). `total` is every child seen at this level so
-      // far, kept as a running number instead of re-added from `counts` on
-      // every push — a parent with many differently-named children would
-      // otherwise cost more per child the more distinct names it has.
-      level = { counts: new Map(), total: 0 };
-      this.siblingStacks[currentLevel] = level;
-    }
-
-    // Create a unique key for sibling tracking that includes namespace
-    const siblingKey = namespace ? `${namespace}:${tagName}` : tagName;
-
-    // Calculate counter (how many times this tag appeared at this level)
-    const counter = level.counts.get(siblingKey) || 0;
-
-    // Position = total children at this level seen before this one.
-    const position = level.total;
-
-    // Update sibling count for this tag, and the level's running total.
-    level.counts.set(siblingKey, counter + 1);
-    level.total++;
-
-    // Create new node
-    const node = {
-      tag: tagName,
-      position: position,
-      counter: counter
-    };
-
-    if (namespace !== null && namespace !== undefined) {
-      node.namespace = namespace;
-    }
-
-    if (attrValues !== null && attrValues !== undefined) {
-      node.values = attrValues;
-    }
-
-    this.path.push(node);
-
-    // Depth of the node we just pushed (1-based, matches this.path.length)
-    const depth = this.path.length;
-
-    // Copy only the requested attributes into the kept-attrs stack. This is
-    // the one part of push() whose cost scales with input (O(keep.length))
-    // rather than being O(1) — by design, since the caller is explicitly
-    // opting in for specific attribute names. No options/keep => zero added
-    // cost beyond the two property reads below.
-    const keep = options !== null ? options.keep : null;
-    if (keep !== null && keep !== undefined && keep.length > 0 && attrValues) {
-      for (let i = 0; i < keep.length; i++) {
-        const name = keep[i];
-        if (attrValues[name] !== undefined) {
-          this._keptAttrs.push({ depth, name, value: attrValues[name] });
-        }
-      }
-    }
-  }
-
-  /**
-   * Pop the last tag from the path.
-   * @returns {Object|undefined} The popped node
-   */
-  pop() {
-    if (this.path.length === 0) return undefined;
-    this._pathStringCache = null;
-
-    const node = this.path.pop();
-
-    if (this.siblingStacks.length > this.path.length + 1) {
-      this.siblingStacks.length = this.path.length + 1;
-    }
-
-    // Drop any kept attributes that belonged to the popped node (or deeper).
-    // _keptAttrs is depth-ordered (push only ever appends increasing depths),
-    // so this is a backward scan that stops at the first surviving entry —
-    // typically O(1) since kept attrs are rare by design.
-    const poppedDepth = this.path.length + 1;
-    while (
-      this._keptAttrs.length > 0 &&
-      this._keptAttrs[this._keptAttrs.length - 1].depth >= poppedDepth
-    ) {
-      this._keptAttrs.pop();
-    }
-
-    return node;
-  }
-
-  /**
-   * Update current node's attribute values.
-   * Useful when attributes are parsed after push.
-   * @param {Object} attrValues
-   */
-  updateCurrent(attrValues) {
-    if (this.path.length > 0) {
-      const current = this.path[this.path.length - 1];
-      if (attrValues !== null && attrValues !== undefined) {
-        current.values = attrValues;
-      }
-    }
-  }
-
-  /**
-   * Get current tag name.
-   * @returns {string|undefined}
-   */
-  getCurrentTag() {
-    return this.path.length > 0 ? this.path[this.path.length - 1].tag : undefined;
-  }
-
-  /**
-   * Get current namespace.
-   * @returns {string|undefined}
-   */
-  getCurrentNamespace() {
-    return this.path.length > 0 ? this.path[this.path.length - 1].namespace : undefined;
-  }
-
-  /**
-   * Get current node's attribute value.
-   * @param {string} attrName
-   * @returns {*}
-   */
-  getAttrValue(attrName) {
-    if (this.path.length === 0) return undefined;
-    return this.path[this.path.length - 1].values?.[attrName];
-  }
-
-  /**
-   * Check if current node has an attribute.
-   * @param {string} attrName
-   * @returns {boolean}
-   */
-  hasAttr(attrName) {
-    if (this.path.length === 0) return false;
-    const current = this.path[this.path.length - 1];
-    return current.values !== undefined && attrName in current.values;
-  }
-
-  /**
-   * Get the value of a "kept" attribute from the nearest ancestor (or
-   * current node) that declared it via `push(tag, attrs, ns, { keep: [...] })`.
-   * Unlike getAttrValue(), this works regardless of how deep the path has
-   * gone since the attribute was pushed — but only for attribute names that
-   * were explicitly marked with `keep` at push time. Cost is proportional to
-   * the number of currently-kept attributes (typically 0-3), not path depth.
-   * @param {string} attrName
-   * @returns {*} the value, or undefined if no ancestor kept this attribute
-   */
-  getAnyParentAttr(attrName) {
-    const kept = this._keptAttrs;
-    for (let i = kept.length - 1; i >= 0; i--) {
-      if (kept[i].name === attrName) return kept[i].value;
-    }
-    return undefined;
-  }
-
-  /**
-   * Check whether any ancestor (or the current node) kept the given
-   * attribute via `push(tag, attrs, ns, { keep: [...] })`.
-   * @param {string} attrName
-   * @returns {boolean}
-   */
-  hasAnyParentAttr(attrName) {
-    const kept = this._keptAttrs;
-    for (let i = kept.length - 1; i >= 0; i--) {
-      if (kept[i].name === attrName) return true;
-    }
-    return false;
-  }
-
-  /**
-   * Get current node's sibling position (child index in parent).
-   * @returns {number}
-   */
-  getPosition() {
-    if (this.path.length === 0) return -1;
-    return this.path[this.path.length - 1].position ?? 0;
-  }
-
-  /**
-   * Get current node's repeat counter (occurrence count of this tag name).
-   * @returns {number}
-   */
-  getCounter() {
-    if (this.path.length === 0) return -1;
-    return this.path[this.path.length - 1].counter ?? 0;
-  }
-
-  /**
-   * Get current node's sibling index (alias for getPosition).
-   * @returns {number}
-   * @deprecated Use getPosition() or getCounter() instead
-   */
-  getIndex() {
-    return this.getPosition();
-  }
-
-  /**
-   * Get current path depth.
-   * @returns {number}
-   */
-  getDepth() {
-    return this.path.length;
-  }
-
-  /**
-   * Get path as string.
-   * @param {string} [separator] - Optional separator (uses default if not provided)
-   * @param {boolean} [includeNamespace=true]
-   * @returns {string}
-   */
-  toString(separator, includeNamespace = true) {
-    const sep = separator || this.separator;
-    const isDefault = (sep === this.separator && includeNamespace === true);
-
-    if (isDefault) {
-      if (this._pathStringCache !== null) {
-        return this._pathStringCache;
-      }
-      const result = this.path.map(n =>
-        (n.namespace) ? `${n.namespace}:${n.tag}` : n.tag
-      ).join(sep);
-      this._pathStringCache = result;
-      return result;
-    }
-
-    return this.path.map(n =>
-      (includeNamespace && n.namespace) ? `${n.namespace}:${n.tag}` : n.tag
-    ).join(sep);
-  }
-
-  /**
-   * Get path as array of tag names.
-   * @returns {string[]}
-   */
-  toArray() {
-    return this.path.map(n => n.tag);
-  }
-
-  /**
-   * Reset the path to empty.
-   */
-  reset() {
-    this._pathStringCache = null;
-    this.path = [];
-    this.siblingStacks = [];
-    this._keptAttrs = [];
-  }
-
-  /**
-   * Match current path against an Expression.
-   * @param {Expression} expression
-   * @returns {boolean}
-   */
-  matches(expression) {
-    const segments = expression.segments;
-
-    if (segments.length === 0) {
-      return false;
-    }
-
-    if (expression.hasDeepWildcard()) {
-      return this._matchWithDeepWildcard(segments);
-    }
-
-    return this._matchSimple(segments);
-  }
-
-  /**
-   * @private
-   */
-  _matchSimple(segments) {
-    if (this.path.length !== segments.length) {
-      return false;
-    }
-
-    for (let i = 0; i < segments.length; i++) {
-      if (!this._matchSegment(segments[i], this.path[i], i === this.path.length - 1)) {
-        return false;
-      }
-    }
-
-    return true;
-  }
-
-  /**
-   * @private
-   */
-  _matchWithDeepWildcard(segments) {
-    let pathIdx = this.path.length - 1;
-    let segIdx = segments.length - 1;
-
-    while (segIdx >= 0 && pathIdx >= 0) {
-      const segment = segments[segIdx];
-
-      if (segment.type === 'deep-wildcard') {
-        segIdx--;
-
-        if (segIdx < 0) {
-          return true;
-        }
-
-        const nextSeg = segments[segIdx];
-        let found = false;
-
-        for (let i = pathIdx; i >= 0; i--) {
-          if (this._matchSegment(nextSeg, this.path[i], i === this.path.length - 1)) {
-            pathIdx = i - 1;
-            segIdx--;
-            found = true;
-            break;
-          }
-        }
-
-        if (!found) {
-          return false;
-        }
-      } else {
-        if (!this._matchSegment(segment, this.path[pathIdx], pathIdx === this.path.length - 1)) {
-          return false;
-        }
-        pathIdx--;
-        segIdx--;
-      }
-    }
-
-    return segIdx < 0;
-  }
-
-  /**
-   * @private
-   */
-  _matchSegment(segment, node, isCurrentNode) {
-    if (segment.tag !== '*' && segment.tag !== node.tag) {
-      return false;
-    }
-
-    if (segment.namespace !== undefined) {
-      if (segment.namespace !== '*' && segment.namespace !== node.namespace) {
-        return false;
-      }
-    }
-
-    if (segment.attrName !== undefined) {
-      if (!isCurrentNode) {
-        return false;
-      }
-
-      if (!node.values || !(segment.attrName in node.values)) {
-        return false;
-      }
-
-      if (segment.attrValue !== undefined) {
-        if (String(node.values[segment.attrName]) !== String(segment.attrValue)) {
-          return false;
-        }
-      }
-    }
-
-    if (segment.position !== undefined) {
-      if (!isCurrentNode) {
-        return false;
-      }
-
-      const counter = node.counter ?? 0;
-
-      if (segment.position === 'first' && counter !== 0) {
-        return false;
-      } else if (segment.position === 'odd' && counter % 2 !== 1) {
-        return false;
-      } else if (segment.position === 'even' && counter % 2 !== 0) {
-        return false;
-      } else if (segment.position === 'nth' && counter !== segment.positionValue) {
-        return false;
-      }
-    }
-
-    return true;
-  }
-
-  /**
-   * Match any expression in the given set against the current path.
-   * @param {ExpressionSet} exprSet
-   * @returns {boolean}
-   */
-  matchesAny(exprSet) {
-    return exprSet.matchesAny(this);
-  }
-
-  /**
-   * Create a snapshot of current state.
-   * @returns {Object}
-   */
-  snapshot() {
-    return {
-      path: this.path.map(node => ({ ...node })),
-      siblingStacks: this.siblingStacks.map(level => level ? { counts: new Map(level.counts), total: level.total } : level),
-      keptAttrs: this._keptAttrs.map(entry => ({ ...entry }))
-    };
-  }
-
-  /**
-   * Restore state from snapshot.
-   * @param {Object} snapshot
-   */
-  restore(snapshot) {
-    this._pathStringCache = null;
-    this.path = snapshot.path.map(node => ({ ...node }));
-    this.siblingStacks = snapshot.siblingStacks.map(level => level ? { counts: new Map(level.counts), total: level.total } : level);
-    this._keptAttrs = (snapshot.keptAttrs || []).map(entry => ({ ...entry }));
-  }
-
-  /**
-   * Return the read-only {@link MatcherView} for this matcher.
-   *
-   * The same instance is returned on every call — no allocation occurs.
-   * It always reflects the current parser state and is safe to pass to
-   * user callbacks without risk of accidental mutation.
-   *
-   * @returns {MatcherView}
-   *
-   * @example
-   * const view = matcher.readOnly();
-   * // pass view to callbacks — it stays in sync automatically
-   * view.matches(expr);       // ✓
-   * view.getCurrentTag();     // ✓
-   * // view.push(...)         // ✗ method does not exist — caught by TypeScript
-   */
-  readOnly() {
-    return this._view;
-  }
-}
-
-;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.6.2/node_modules/path-expression-matcher/src/Expression.js
-/**
- * Expression - Parses and stores a tag pattern expression
- * 
- * Patterns are parsed once and stored in an optimized structure for fast matching.
- * 
- * @example
- * const expr = new Expression("root.users.user");
- * const expr2 = new Expression("..user[id]:first");
- * const expr3 = new Expression("root/users/user", { separator: '/' });
- */
-class Expression_Expression {
-  /**
-   * Create a new Expression
-   * @param {string} pattern - Pattern string (e.g., "root.users.user", "..user[id]")
-   * @param {Object} options - Configuration options
-   * @param {string} options.separator - Path separator (default: '.')
-   */
-  constructor(pattern, options = {}, data) {
-    this.pattern = pattern;
-    this.separator = options.separator || '.';
-    this.segments = this._parse(pattern);
-    this.data = data;
-    // Cache expensive checks for performance (O(1) instead of O(n))
-    this._hasDeepWildcard = this.segments.some(seg => seg.type === 'deep-wildcard');
-    this._hasAttributeCondition = this.segments.some(seg => seg.attrName !== undefined);
-    this._hasPositionSelector = this.segments.some(seg => seg.position !== undefined);
-  }
-
-  /**
-   * Parse pattern string into segments
-   * @private
-   * @param {string} pattern - Pattern to parse
-   * @returns {Array} Array of segment objects
-   */
-  _parse(pattern) {
-    const segments = [];
-
-    // Split by separator but handle ".." specially
-    let i = 0;
-    let currentPart = '';
-
-    while (i < pattern.length) {
-      if (pattern[i] === this.separator) {
-        // Check if next char is also separator (deep wildcard)
-        if (i + 1 < pattern.length && pattern[i + 1] === this.separator) {
-          // Flush current part if any
-          if (currentPart.trim()) {
-            segments.push(this._parseSegment(currentPart.trim()));
-            currentPart = '';
-          }
-          // Add deep wildcard
-          segments.push({ type: 'deep-wildcard' });
-          i += 2; // Skip both separators
-        } else {
-          // Regular separator
-          if (currentPart.trim()) {
-            segments.push(this._parseSegment(currentPart.trim()));
-          }
-          currentPart = '';
-          i++;
-        }
-      } else {
-        currentPart += pattern[i];
-        i++;
-      }
-    }
-
-    // Flush remaining part
-    if (currentPart.trim()) {
-      segments.push(this._parseSegment(currentPart.trim()));
-    }
-
-    return segments;
-  }
-
-  /**
-   * Parse a single segment
-   * @private
-   * @param {string} part - Segment string (e.g., "user", "ns::user", "user[id]", "ns::user:first")
-   * @returns {Object} Segment object
-   */
-  _parseSegment(part) {
-    const segment = { type: 'tag' };
-
-    // NEW NAMESPACE SYNTAX (v2.0):
-    // ============================
-    // Namespace uses DOUBLE colon (::)
-    // Position uses SINGLE colon (:)
-    // 
-    // Examples:
-    //   "user"              → tag
-    //   "user:first"        → tag + position
-    //   "user[id]"          → tag + attribute
-    //   "user[id]:first"    → tag + attribute + position
-    //   "ns::user"          → namespace + tag
-    //   "ns::user:first"    → namespace + tag + position
-    //   "ns::user[id]"      → namespace + tag + attribute
-    //   "ns::user[id]:first" → namespace + tag + attribute + position
-    //   "ns::first"         → namespace + tag named "first" (NO ambiguity!)
-    //
-    // This eliminates all ambiguity:
-    //   :: = namespace separator
-    //   :  = position selector
-    //   [] = attributes
-
-    // Step 1: Extract brackets [attr] or [attr=value]
-    let bracketContent = null;
-    let withoutBrackets = part;
-
-    const bracketMatch = part.match(/^([^\[]+)(\[[^\]]*\])(.*)$/);
-    if (bracketMatch) {
-      withoutBrackets = bracketMatch[1] + bracketMatch[3];
-      if (bracketMatch[2]) {
-        const content = bracketMatch[2].slice(1, -1);
-        if (content) {
-          bracketContent = content;
-        }
-      }
-    }
-
-    // Step 2: Check for namespace (double colon ::)
-    let namespace = undefined;
-    let tagAndPosition = withoutBrackets;
-
-    if (withoutBrackets.includes('::')) {
-      const nsIndex = withoutBrackets.indexOf('::');
-      namespace = withoutBrackets.substring(0, nsIndex).trim();
-      tagAndPosition = withoutBrackets.substring(nsIndex + 2).trim(); // Skip ::
-
-      if (!namespace) {
-        throw new Error(`Invalid namespace in pattern: ${part}`);
-      }
-    }
-
-    // Step 3: Parse tag and position (single colon :)
-    let tag = undefined;
-    let positionMatch = null;
-
-    if (tagAndPosition.includes(':')) {
-      const colonIndex = tagAndPosition.lastIndexOf(':'); // Use last colon for position
-      const tagPart = tagAndPosition.substring(0, colonIndex).trim();
-      const posPart = tagAndPosition.substring(colonIndex + 1).trim();
-
-      // Verify position is a valid keyword
-      const isPositionKeyword = ['first', 'last', 'odd', 'even'].includes(posPart) ||
-        /^nth\(\d+\)$/.test(posPart);
-
-      if (isPositionKeyword) {
-        tag = tagPart;
-        positionMatch = posPart;
-      } else {
-        // Not a valid position keyword, treat whole thing as tag
-        tag = tagAndPosition;
-      }
-    } else {
-      tag = tagAndPosition;
-    }
-
-    if (!tag) {
-      throw new Error(`Invalid segment pattern: ${part}`);
-    }
-
-    segment.tag = tag;
-    if (namespace) {
-      segment.namespace = namespace;
-    }
-
-    // Step 4: Parse attributes
-    if (bracketContent) {
-      if (bracketContent.includes('=')) {
-        const eqIndex = bracketContent.indexOf('=');
-        segment.attrName = bracketContent.substring(0, eqIndex).trim();
-        segment.attrValue = bracketContent.substring(eqIndex + 1).trim();
-      } else {
-        segment.attrName = bracketContent.trim();
-      }
-    }
-
-    // Step 5: Parse position selector
-    if (positionMatch) {
-      const nthMatch = positionMatch.match(/^nth\((\d+)\)$/);
-      if (nthMatch) {
-        segment.position = 'nth';
-        segment.positionValue = parseInt(nthMatch[1], 10);
-      } else {
-        segment.position = positionMatch;
-      }
-    }
-
-    return segment;
-  }
-
-  /**
-   * Get the number of segments
-   * @returns {number}
-   */
-  get length() {
-    return this.segments.length;
-  }
-
-  /**
-   * Check if expression contains deep wildcard
-   * @returns {boolean}
-   */
-  hasDeepWildcard() {
-    return this._hasDeepWildcard;
-  }
-
-  /**
-   * Check if expression has attribute conditions
-   * @returns {boolean}
-   */
-  hasAttributeCondition() {
-    return this._hasAttributeCondition;
-  }
-
-  /**
-   * Check if expression has position selectors
-   * @returns {boolean}
-   */
-  hasPositionSelector() {
-    return this._hasPositionSelector;
-  }
-
-  /**
-   * Get string representation
-   * @returns {string}
-   */
-  toString() {
-    return this.pattern;
-  }
-}
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/path-expression-matcher@1.6.2/node_modules/path-expression-matcher/src/ExpressionSet.js
 /**
  * ExpressionSet - An indexed collection of Expressions for efficient bulk matching
@@ -101559,7 +99824,7 @@ class OrderedObjParser {
     }
 
     // Initialize path matcher for path-expression-matcher
-    this.matcher = new Matcher_Matcher();
+    this.matcher = new Matcher();
     this.readonlyMatcher = this.matcher.readOnly();
 
     // Flag to track if current node is a stop node (optimization)
@@ -101573,8 +99838,8 @@ class OrderedObjParser {
         const stopNodeExp = stopNodesOpts[i];
         if (typeof stopNodeExp === 'string') {
           // Convert string to Expression object
-          this.stopNodeExpressionsSet.add(new Expression_Expression(stopNodeExp));
-        } else if (stopNodeExp instanceof Expression_Expression) {
+          this.stopNodeExpressionsSet.add(new Expression(stopNodeExp));
+        } else if (stopNodeExp instanceof Expression) {
           // Already an Expression object
           this.stopNodeExpressionsSet.add(stopNodeExp);
         }
@@ -130937,7 +129202,7 @@ var generatedModels_KnownEncryptionAlgorithmType;
 
 
 //# sourceMappingURL=index.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/upload/blob-upload.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/upload/blob-upload.js
 var blob_upload_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -131025,7 +129290,7 @@ function uploadToBlobStorage(authenticatedUploadURL, uploadStream, contentType) 
 const promises_namespaceObject = require("fs/promises");
 // EXTERNAL MODULE: ./node_modules/.pnpm/archiver@7.0.1/node_modules/archiver/index.js
 var archiver = __nccwpck_require__(814);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/upload/stream.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/upload/stream.js
 var stream_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -131078,7 +129343,7 @@ function createRawFileUploadStream(filePath) {
     });
 }
 //# sourceMappingURL=stream.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/upload/zip.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/upload/zip.js
 var zip_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -131156,7 +129421,7 @@ const zipEndCallback = () => {
     core_debug('Zip stream for upload has ended.');
 };
 //# sourceMappingURL=zip.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/upload/types.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/upload/types.js
 
 /**
  * Maps file extensions to MIME types
@@ -131228,7 +129493,7 @@ function getMimeType(filePath) {
     return types_mimeTypes[ext] || 'application/octet-stream';
 }
 //# sourceMappingURL=types.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/upload/upload-artifact.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/upload/upload-artifact.js
 var upload_artifact_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -131337,7 +129602,7 @@ function uploadArtifact(name, files, rootDirectory, options) {
     });
 }
 //# sourceMappingURL=upload-artifact.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.0.0/node_modules/@actions/github/lib/context.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.1.1/node_modules/@actions/github/lib/context.js
 
 
 class Context {
@@ -131392,7 +129657,7 @@ class Context {
 //# sourceMappingURL=context.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/@actions+http-client@3.0.2/node_modules/@actions/http-client/lib/index.js
 var lib = __nccwpck_require__(4647);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.0.0/node_modules/@actions/github/lib/internal/utils.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.1.1/node_modules/@actions/github/lib/internal/utils.js
 var utils_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -131430,6 +129695,19 @@ function getProxyFetch(destinationUrl) {
 }
 function getApiBaseUrl() {
     return process.env['GITHUB_API_URL'] || 'https://api.github.com';
+}
+function getUserAgentWithOrchestrationId(baseUserAgent) {
+    var _a;
+    const orchId = (_a = process.env['ACTIONS_ORCHESTRATION_ID']) === null || _a === void 0 ? void 0 : _a.trim();
+    if (orchId) {
+        const sanitizedId = orchId.replace(/[^a-z0-9_.-]/gi, '_');
+        const tag = `actions_orchestration_id/${sanitizedId}`;
+        if (baseUserAgent === null || baseUserAgent === void 0 ? void 0 : baseUserAgent.includes(tag))
+            return baseUserAgent;
+        const ua = baseUserAgent ? `${baseUserAgent} ` : '';
+        return `${ua}${tag}`;
+    }
+    return baseUserAgent;
 }
 //# sourceMappingURL=utils.js.map
 ;// CONCATENATED MODULE: ./node_modules/.pnpm/universal-user-agent@7.0.3/node_modules/universal-user-agent/index.js
@@ -135525,7 +133803,7 @@ function paginateRest(octokit) {
 paginateRest.VERSION = plugin_paginate_rest_dist_bundle_VERSION;
 
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.0.0/node_modules/@actions/github/lib/utils.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.1.1/node_modules/@actions/github/lib/utils.js
 
 
 // octokit + plugins
@@ -135542,6 +133820,7 @@ const defaults = {
     }
 };
 const GitHub = Octokit.plugin(restEndpointMethods, paginateRest).defaults(defaults);
+
 /**
  * Convience function to correctly format Octokit Options to pass into the constructor.
  *
@@ -135555,10 +133834,15 @@ function getOctokitOptions(token, options) {
     if (auth) {
         opts.auth = auth;
     }
+    // Orchestration ID
+    const userAgent = getUserAgentWithOrchestrationId(opts.userAgent);
+    if (userAgent) {
+        opts.userAgent = userAgent;
+    }
     return opts;
 }
 //# sourceMappingURL=utils.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.0.0/node_modules/@actions/github/lib/github.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+github@9.1.1/node_modules/@actions/github/lib/github.js
 
 
 const github_context = new Context();
@@ -135575,7 +133859,7 @@ function getOctokit(token, options, ...additionalPlugins) {
 //# sourceMappingURL=github.js.map
 // EXTERNAL MODULE: ./node_modules/.pnpm/unzip-stream@0.3.4/node_modules/unzip-stream/unzip.js
 var unzip = __nccwpck_require__(9579);
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/download/download-artifact.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/download/download-artifact.js
 var download_artifact_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -135641,7 +133925,7 @@ function streamExtract(url, directory, skipDecompress) {
 function streamExtractExternal(url_1, directory_1) {
     return download_artifact_awaiter(this, arguments, void 0, function* (url, directory, opts = {}) {
         const { timeout = 30 * 1000, skipDecompress = false } = opts;
-        const client = new http_client_lib_HttpClient(getUserAgentString());
+        const client = new lib_HttpClient(getUserAgentString());
         const response = yield client.get(url);
         if (response.message.statusCode !== 200) {
             throw new Error(`Unexpected HTTP response from blob storage: ${response.message.statusCode} ${response.message.statusMessage}`);
@@ -135814,7 +134098,7 @@ function resolveOrCreateDirectory() {
     });
 }
 //# sourceMappingURL=download-artifact.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/find/retry-options.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/find/retry-options.js
 
 // Defaults for fetching artifacts
 const defaultMaxRetryNumber = 5;
@@ -135953,7 +134237,7 @@ function retry(octokit, octokitOptions) {
 retry.VERSION = plugin_retry_dist_bundle_VERSION;
 
 
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/find/get-artifact.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/find/get-artifact.js
 var get_artifact_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -136053,7 +134337,7 @@ function getArtifactInternal(artifactName) {
     });
 }
 //# sourceMappingURL=get-artifact.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/delete/delete-artifact.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/delete/delete-artifact.js
 var delete_artifact_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -136132,7 +134416,7 @@ function deleteArtifactInternal(artifactName) {
     });
 }
 //# sourceMappingURL=delete-artifact.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/find/list-artifacts.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/find/list-artifacts.js
 var list_artifacts_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -136276,7 +134560,7 @@ function filterLatest(artifacts) {
     return latestArtifacts;
 }
 //# sourceMappingURL=list-artifacts.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/internal/client.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/internal/client.js
 var client_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -136417,7 +134701,7 @@ If the error persists, please check whether Actions and API requests are operati
     }
 }
 //# sourceMappingURL=client.js.map
-;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.2.1/node_modules/@actions/artifact/lib/artifact.js
+;// CONCATENATED MODULE: ./node_modules/.pnpm/@actions+artifact@6.3.1/node_modules/@actions/artifact/lib/artifact.js
 
 
 
